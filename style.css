@@ -1,0 +1,162 @@
+/* СБРОС И ОСНОВА */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background: #0a0a0a;
+    color: #ffffff; /* Белый текст для читаемости */
+    line-height: 1.7;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* ФОН С ГИФКОЙ */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: url("images/gymeig.gif") center / cover no-repeat;
+    filter: brightness(0.25) contrast(1.2); /* затемнение для текста */
+    z-index: -2;
+}
+
+/* БОКОВОЕ СИЯНИЕ */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background: radial-gradient(circle, rgba(255,165,0,0.25) 0%, transparent 80%);
+}
+body::before, body::after {
+    pointer-events: none;
+}
+
+/* НАВИГАЦИЯ */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: center;
+    padding: 18px 0;
+    z-index: 10;
+}
+
+.navbar a {
+    color: #f5f5f5;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffa500; /* оранжевый акцент */
+    text-shadow: 0 0 12px #ffa500, 0 0 20px #cd853f; /* металлик-акцент */
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6); /* затемнение гифки */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 70px;
+    letter-spacing: 6px;
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffa500, 0 0 20px #cd853f, 0 0 30px #228B22; /* оранжевый, металл, зелёный */
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.hero-content p {
+    margin-top: 18px;
+    font-size: 22px;
+    opacity: 0.9;
+}
+
+/* БЛОКИ КОНТЕНТА */
+main, .intro, .highlight {
+    padding: 100px 15%;
+    background: rgba(10, 10, 10, 0.5);
+    backdrop-filter: blur(12px);
+    margin-bottom: 50px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,165,0,0.3); /* тонкая рамка оранжевого */
+}
+
+/* Заголовки */
+main h1, .intro h2, .highlight h2 {
+    font-size: 44px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffa500, 0 0 20px #cd853f, 0 0 30px #228B22;
+}
+
+main h2 {
+    font-size: 32px;
+    margin-top: 40px;
+}
+
+/* Списки */
+ul li {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding-left: 10px;
+    position: relative;
+}
+
+ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ffa500; /* маркер оранжевый */
+}
+
+/* ФУТЕР */
+footer {
+    padding: 25px;
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+    opacity: 0.9;
+}
+
+/* АНИМАЦИЯ СИЯНИЯ */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ffa500, 0 0 20px #cd853f, 0 0 30px #228B22;
+    }
+    to {
+        text-shadow: 0 0 20px #ffa500, 0 0 30px #cd853f, 0 0 40px #228B22;
+    }
+}

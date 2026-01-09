@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Дыхание Камня — Маски «Небесная твердь»</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Фон для этой страницы (можно сменить гифку при необходимости) */
+        body::before {
+            background: url("images/himejima.gif") center / cover no-repeat;
+            filter: brightness(0.25) contrast(1.2);
+        }
+
+        /* Галерея масок внизу */
+        .mask-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin: 50px 0;
+        }
+
+        .mask-gallery img {
+            width: 250px;
+            height: auto;
+            border: 2px solid rgba(255,165,0,0.5); /* рамка оранжево-коричневая */
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255,165,0,0.5), 0 0 40px rgba(205,133,63,0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .mask-gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255,165,0,0.7), 0 0 60px rgba(205,133,63,0.5);
+        }
+    </style>
+</head>
+<body class="page-masks">
+
+    <!-- НАВИГАЦИЯ -->
+    <nav class="navbar">
+        <a href="index.html">Главная</a>
+        <a href="breathing-ranks.html">Система повышения</a>
+        <a href="masks.html">Маски</a>
+        <a href="stone-will.html">Каменная воля</a>
+        <a href="techniques.html">Приёмы дыхания</a>
+        <a href="vows.html">Буддийские обеты</a>
+        <a href="subordination.html">Субординация</a>
+        <a href="punishments.html">Отрядные выговоры</a>
+        <a href="prayers.html">Молитвы</a>
+    </nav>
+
+    <!-- КОНТЕНТ -->
+    <main>
+        <h1>Маски «Небесная твердь»</h1>
+        <p>Маски позволяют скрыть личность, защитить себя на заданиях и мероприятиях. Создавать их не обязательно, но если хочешь — следуй порядку действий.</p>
+
+        <h2>Основные правила создания масок</h2>
+        <ul>
+            <li>Каждое действие необходимо строго отыгрывать через /me, /do, /try (1 действие = 5 отыгрышей).</li>
+            <li>Выбери материал для маски: дерево, глина или бамбук.</li>
+        </ul>
+
+        <h2>Дерево</h2>
+        <ul>
+            <li>Найти подходящее дерево в лесу и срубить его, убедившись, что нет гнили или трещин.</li>
+            <li>Обработать древесину в мастерской с использованием инструментов.</li>
+            <li>Сушить, разметить места резьбы, вырезать маску и покрыть краской или защитным слоем.</li>
+        </ul>
+
+        <h2>Глина</h2>
+        <ul>
+            <li>Собрать сырую глину из водоёма, приготовить крепеж из дерева или бамбука.</li>
+            <li>Сформировать форму маски, закрепить её деревянными/бамбуковыми палочками.</li>
+            <li>После просушки обработать наждачной бумагой и покрасить.</li>
+        </ul>
+
+        <h2>Бамбук</h2>
+        <ul>
+            <li>Найти крепкие бамбуки, разрезать и обработать, разметить конструкцию.</li>
+            <li>Скрепить детали клеем или верёвкой, убедиться, что маска стабильна.</li>
+            <li>Обработать защитным покрытием или краской, оставить сушиться.</li>
+        </ul>
+
+        <h2>Использование масок</h2>
+        <ul>
+            <li>Можно носить только на заданиях и мероприятиях, запрещено в штабе.</li>
+        </ul>
+
+        <!-- ГАЛЕРЕЯ МАСОК -->
+        <div class="mask-gallery">
+            <img src="images/mask1.jpg" alt="Маска 1">
+            <img src="images/mask2.jpg" alt="Маска 2">
+        </div>
+    </main>
+
+</body>
+</html>

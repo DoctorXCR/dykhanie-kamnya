@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Отрядные выговоры — Дыхание Камня</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body::before {
+            background: url("images/gyom.gif") center / cover no-repeat;
+            filter: brightness(0.25) contrast(1.2);
+        }
+
+        main {
+            position: relative;
+            min-height: calc(100vh - 80px);
+            padding: 100px 15% 150px 15%;
+            background: rgba(10, 10, 10, 0.5);
+            backdrop-filter: blur(12px);
+            border-radius: 15px;
+            border: 1px solid rgba(255,165,0,0.3);
+            margin: 50px auto;
+        }
+
+        main h1 {
+            font-size: 48px;
+            margin-bottom: 30px;
+            color: #ffffff;
+            text-shadow: 0 0 10px #ffa500, 0 0 20px #cd853f, 0 0 30px #228B22;
+            text-align: center;
+        }
+
+        main h2 {
+            font-size: 32px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #ffa500;
+        }
+
+        p, ul li {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        ul li {
+            margin-left: 25px;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #ffa500;
+        }
+
+        /* Блоки «таблицы» */
+        .punishment-block {
+            background: rgba(255, 165, 0, 0.05);
+            border: 1px solid rgba(255,165,0,0.3);
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+        }
+
+        .punishment-title {
+            font-weight: 700;
+            font-size: 20px;
+            color: #ffa500;
+            margin-bottom: 10px;
+        }
+
+        .punishment-content ul li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body class="page-punishments">
+
+    <nav class="navbar">
+        <a href="index.html">Главная</a>
+        <a href="breathing-ranks.html">Система повышения</a>
+        <a href="masks.html">Маски</a>
+        <a href="stone-will.html">Каменная воля</a>
+        <a href="techniques.html">Приёмы дыхания</a>
+        <a href="vows.html">Буддийские обеты</a>
+        <a href="subordination.html">Субординация</a>
+        <a href="punishments.html">Отрядные выговоры</a>
+        <a href="prayers.html">Молитвы</a>
+    </nav>
+
+    <main>
+        <h1>Отрядные выговоры</h1>
+        <p>В Дыхании Камня существуют различные виды выговоров. Они отражают серьёзность нарушения субординации или правил и служат для поддержания дисциплины. Ниже приведена структурированная информация о каждом виде предупреждений и выговоров.</p>
+
+        <!-- Блок предупреждения -->
+        <div class="punishment-block">
+            <div class="punishment-title">Предупреждение (1/2)</div>
+            <div class="punishment-content">
+                <ul>
+                    <li>Причина: Нарушение субординации.</li>
+                    <li>Отработка: Чистка оружия, приготовление еды, уборка, выполнение обета.</li>
+                    <li>Ограничения: Нет.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Блок выговора -->
+        <div class="punishment-block">
+            <div class="punishment-title">Выговор (1/3)</div>
+            <div class="punishment-content">
+                <ul>
+                    <li>Причина: Грубейшее нарушение устава или субординации Камня.</li>
+                    <li>Отработка: Выполнение поручения от инструктора стиля Камня.</li>
+                    <li>Ограничения: Запрет на повышение внутри дыхания.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Блок выговора 2 -->
+        <div class="punishment-block">
+            <div class="punishment-title">Выговор (2/3)</div>
+            <div class="punishment-content">
+                <ul>
+                    <li>Отработка: Убийство определённого количества демонов, выполнение обета молчания «Мауна», выполнение поручения от Цугуко стиля Камня.</li>
+                    <li>Чтение сутр: 6, 35, 41.</li>
+                    <li>Ограничения: Как выговор, плюс дополнительные духовные практики.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Блок выговора 3 -->
+        <div class="punishment-block">
+            <div class="punishment-title">Выговор (3/3)</div>
+            <div class="punishment-content">
+                <ul>
+                    <li>Не отрабатывается.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Строгий выговор -->
+        <div class="punishment-block">
+            <div class="punishment-title">Строгий выговор (1/1)</div>
+            <div class="punishment-content">
+                <ul>
+                    <li>На усмотрение Столпа Камня.</li>
+                    <li>Суммируется с тремя обычными выговорами.</li>
+                    <li>Ограничения: Аннулирование всех рекомендаций, сброс прогресса на текущем ранге, запрет на повышение на определённый срок.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Примечания</h2>
+        <ul>
+            <li>На усмотрение старшего состава Камня человек может сразу получить кик из дыхания вместо строгого выговора.</li>
+            <li>Выговоры фиксируются по степени серьёзности и влияют на дальнейшее повышение в дыхании.</li>
+        </ul>
+    </main>
+
+</body>
+</html>
